@@ -1,23 +1,20 @@
-import { Tabs, Tab, Card } from '@heroui/react';
-import ProjectForm from '@/components/admin/project-form';
-import BlogForm from '@/components/admin/blog-form';
-
 export default function AdminPage() {
   return (
-    <div>
+    <div className="p-8 bg-white rounded-xl shadow-sm">
       <h1 className="text-2xl font-bold mb-6">Admin Dashboard</h1>
-      <Tabs aria-label="Admin sections">
-        <Tab key="projects" title="Projects">
-          <Card className="p-4">
-            <ProjectForm />
-          </Card>
-        </Tab>
-        <Tab key="blog" title="Blog Posts">
-          <Card className="p-4">
-            <BlogForm />
-          </Card>
-        </Tab>
-      </Tabs>
+      <p className="text-gray-600 mb-4">Backend functionality temporarily disabled.</p>
+
+      <div className="grid gap-4">
+        <div className="p-4 border rounded-lg">
+          <h2 className="font-medium mb-2">Projects</h2>
+          <p className="text-sm text-gray-500">Project management disabled</p>
+        </div>
+
+        <div className="p-4 border rounded-lg">
+          <h2 className="font-medium mb-2">Blog Posts</h2>
+          <p className="text-sm text-gray-500">Blog management disabled</p>
+        </div>
+      </div>
     </div>
   );
 }

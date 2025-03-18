@@ -1,12 +1,22 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+// import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
 
+    // Mock successful email sending
+    console.log('Mock email sending:', { name, email, message });
+
+    // Return mock success response
+    return NextResponse.json({
+      id: 'mock-email-id',
+      status: 'success'
+    });
+
+    /* Real implementation (commented out)
     const data = await resend.emails.send({
       from: 'Code Savan <onboarding@resend.dev>',
       to: ['eric.marvelboy@gmail.com'],
@@ -26,7 +36,8 @@ Message: ${message}
     });
 
     return NextResponse.json(data);
+    */
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ error: 'Mock error' });
   }
 }

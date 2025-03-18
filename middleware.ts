@@ -1,12 +1,10 @@
-import { authMiddleware } from "@clerk/nextjs/server";
+// import { authMiddleware } from "@clerk/nextjs/server";
+import { NextResponse } from 'next/server';
 
-export default authMiddleware({
-  // Routes that can be accessed while signed out
-  publicRoutes: ["/", "/blog", "/projects", "/blog/(.*)", "/projects/(.*)"],
-  // Routes that can always be accessed, and have
-  // no authentication information
-  ignoredRoutes: ["/api/public"],
-});
+// Temporarily replaced with a simple middleware that allows all routes
+export default function middleware() {
+  return NextResponse.next();
+}
 
 export const config = {
   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],

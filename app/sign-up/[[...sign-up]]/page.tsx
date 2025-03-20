@@ -1,17 +1,24 @@
-// import { SignUp } from "@clerk/nextjs";
+import { SignUp } from "@clerk/nextjs";
 
-export default function SignUpPage() {
+export default function Page() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center">Sign Up</h1>
-        <p className="text-gray-500 text-center mb-4">
-          Authentication temporarily disabled.
-        </p>
-        <button className="w-full bg-blue-600 text-white py-2 rounded-lg">
-          Back to Home
-        </button>
-      </div>
+    <div className="auth-container flex items-center justify-center min-h-[calc(100vh-100px)] py-10">
+      <SignUp
+        appearance={{
+          elements: {
+            rootBox: "mx-auto w-full max-w-[550px]",
+            card: "shadow-xl border border-gray-100",
+            formButtonPrimary: "bg-blue-600 hover:bg-blue-700",
+            formFieldInput: "rounded-md border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600",
+            footerActionLink: "text-blue-600 hover:text-blue-800"
+          },
+          variables: {
+            colorPrimary: '#2563eb'
+          }
+        }}
+        signInUrl="/sign-in"
+        afterSignUpUrl="/admin"
+      />
     </div>
   );
 }

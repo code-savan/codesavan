@@ -15,9 +15,9 @@ import Navigation from '@/components/Navigation';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center w-full ">
+    <main className="flex flex-col items-center justify-center w-full">
         <Navigation />
-        <div className="md:w-[550px] w-full h-fit overflow-x-hidden  md:overflow-x-visible">
+        <div className="w-full mx-auto md:w-[550px] h-fit overflow-x-hidden md:overflow-x-visible">
             <div id="home">
               <Hero />
             </div>
@@ -31,8 +31,8 @@ export default function Home() {
             <div id="testimonials">
               <Testimonials />
             </div>
-            <FAQs />
             <Success />
+            <FAQs />
             <Newsletter />
             <div id="contact">
               <Contact />

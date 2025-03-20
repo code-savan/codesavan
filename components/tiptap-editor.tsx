@@ -11,6 +11,7 @@ import Color from '@tiptap/extension-color';
 import Highlight from '@tiptap/extension-highlight';
 import Placeholder from '@tiptap/extension-placeholder';
 import { Button } from '@heroui/react';
+import { useState, useEffect } from 'react';
 import {
   Bold,
   Italic,
@@ -36,6 +37,8 @@ interface TiptapEditorProps {
 }
 
 export default function TiptapEditor({ content, onChange, placeholder = 'Start writing...' }: TiptapEditorProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
   const editor = useEditor({
     extensions: [
       StarterKit,
@@ -58,10 +61,20 @@ export default function TiptapEditor({ content, onChange, placeholder = 'Start w
     onUpdate: ({ editor }) => {
       onChange(editor.getHTML());
     },
+    immediatelyRender: false,
   });
 
+  // Handle hydration issues
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <div className="border rounded-lg overflow-hidden p-4 min-h-[280px] bg-gray-50"></div>;
+  }
+
   if (!editor) {
-    return null;
+    return <div className="border rounded-lg overflow-hidden p-4 min-h-[280px] bg-gray-50"></div>;
   }
 
   const addImage = () => {

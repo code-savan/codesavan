@@ -61,7 +61,7 @@ const Work = () => {
                     >
                         <div className="flex justify-between bg-white rounded-[40px] p-1 items-end">
                             <div className="flex gap-3 items-center">
-                                <div className="w-[54px] h-[54px] relative rounded-full overflow-hidden flex justify-center items-center bg-blue-500">
+                                <div className="w-[54px] h-[54px] relative rounded-full overflow-hidden flex justify-center items-center" style={{ backgroundColor: project.logoColor }}>
                                     <Image
                                         src={project.logoImage}
                                         alt={project.title}

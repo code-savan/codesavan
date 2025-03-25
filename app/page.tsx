@@ -16,30 +16,31 @@ import Navigation from '@/components/Navigation';
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center w-full">
-        <Navigation />
-        <div className="w-full mx-auto md:w-[550px] h-fit overflow-x-hidden md:overflow-x-visible">
-            <div id="home">
-              <Hero />
-            </div>
-            <Tools />
-            <div id="work">
-              <Work />
-            </div>
-            <Journey />
-            <Services />
-            <Stats />
-            <div id="testimonials">
-              <Testimonials />
-            </div>
-            <Success />
-            <FAQs />
-            <Newsletter />
-            <div id="contact">
-              <Contact />
-            </div>
-            {/* <Features /> */}
-            {/* <CTA /> */}
+      <Navigation />
+
+      <div className="w-full mx-auto md:w-[550px] h-fit overflow-x-hidden md:overflow-x-visible">
+        <div id="home">
+          <Hero />
         </div>
+        <Tools />
+        <div id="work">
+          <Work />
+        </div>
+        <Journey />
+        <Services />
+        <Stats />
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+        <Success />
+        <FAQs />
+        <Newsletter />
+        <div id="contact">
+          <Contact />
+        </div>
+        {/* <Features /> */}
+        {/* <CTA /> */}
+      </div>
     </main>
   );
 }

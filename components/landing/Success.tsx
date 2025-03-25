@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const Success = () => {
   return (
     <div className='relative h-[450px] md:h-[600px] w-[98%] md:full mx-auto rounded-[35px]
-    shadow-md overflow-hidden px-2 md:px-0'>
+    shadow-md overflow-hidden px-2 md:px-0 md:mt-16'>
       {/* Background Image */}
       <Image
         src="/profile.jpeg"
@@ -28,7 +28,7 @@ const Success = () => {
         </h2>
 
         <p className='text-white/80 text-[17px] mb-8 max-w-[500px] text-center'>
-          I've worked with 20 clients to build <br className='hidden md:block' /> impactful websites that drive results
+          I&apos;ve worked with 20 clients to build <br className='hidden md:block' /> impactful websites that drive results
         </p>
 
         <motion.button

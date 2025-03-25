@@ -27,7 +27,7 @@ export default function RootLayout({
         <body className={manrope.className}>
           <div className="relative md:w-[550px] w-full mx-auto ">
             {/* Fixed header for auth controls - only visible on non-auth pages */}
-            <SignedOut>
+            {/* <SignedOut>
               <div className="fixed top-4 right-4 z-50 flex space-x-3">
                 <SignInButton mode="modal">
                   <button className="px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-full hover:bg-gray-100 transition-colors">
@@ -40,7 +40,7 @@ export default function RootLayout({
                   </button>
                 </SignUpButton>
               </div>
-            </SignedOut>
+            </SignedOut> */}
 
             {/* User button shown when signed in */}
             {/* <SignedIn>

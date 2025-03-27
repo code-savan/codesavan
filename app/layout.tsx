@@ -25,7 +25,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={manrope.className}>
-          <div className="relative md:w-[550px] w-full mx-auto ">
+          <div className="relative w-full mx-auto ">
             {/* Fixed header for auth controls - only visible on non-auth pages */}
             {/* <SignedOut>
               <div className="fixed top-4 right-4 z-50 flex space-x-3">

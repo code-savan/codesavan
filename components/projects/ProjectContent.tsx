@@ -166,6 +166,43 @@ export default function ProjectContent({ slug }: { slug: string }) {
       {/* Project Details */}
       <section className="w-full py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
+          {/* Project Info Bar */}
+          <div className="mb-20 flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200 pb-8">
+            <div className="flex flex-col mb-4 md:mb-0">
+              <span className="text-sm text-gray-500 uppercase tracking-wider mb-1">Client</span>
+              <span className="text-xl font-medium">{project.client}</span>
+            </div>
+
+            <div className="flex flex-col mb-4 md:mb-0">
+              <span className="text-sm text-gray-500 uppercase tracking-wider mb-1">Category</span>
+              <span className="text-xl font-medium">{project.category}</span>
+            </div>
+
+            <div className="flex flex-col mb-4 md:mb-0">
+              <span className="text-sm text-gray-500 uppercase tracking-wider mb-1">Date</span>
+              <span className="text-xl font-medium">{project.date}</span>
+            </div>
+
+            {project.website && (
+              <div className="flex flex-col">
+                <span className="text-sm text-gray-500 uppercase tracking-wider mb-1">Website</span>
+                <a
+                  href={project.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl font-medium text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1"
+                >
+                  Visit Site
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            )}
+          </div>
+
           {/* Introduction and first two images */}
           <div className="mb-20">
             <p className="text-[16px] text-gray-700 mb-16 leading-relaxed md:max-w-[50%] mx-auto">{introduction}</p>

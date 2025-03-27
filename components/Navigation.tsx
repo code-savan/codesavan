@@ -93,7 +93,10 @@ const Navigation = () => {
                     onClick={() => scrollToSection('work')}
                     className={`text-white/80 hover:text-white transition-colors text-[15px] ${activeSection === 'work' ? 'text-white' : ''}`}
                   >
-                    Projects
+                    <Link href="/projects" className="flex items-center gap-2">
+                      <span>Projects</span>
+                      {/* <ArrowRight className="w-4 h-4" /> */}
+                    </Link>
                   </button>
 
                   <button

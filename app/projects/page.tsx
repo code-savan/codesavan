@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import { ArrowRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const heroImages = [
   {
@@ -102,59 +103,61 @@ const ProjectsPage = () => {
               <motion.div
                 key={project.key}
                 className={`rounded-[40px] md:h-[500px] md:w-[600px] mx-auto h-[350px] w-full overflow-hidden cursor-pointer group
-                          sticky top-[140px]`}
+                          sticky top-[120px]`}
                 style={{
                   zIndex: index + 1,
-                  marginBottom: '30px'
+                  marginBottom: '50px'
                 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 whileHover={{ scale: 1.02 }}
               >
-                {/* Background Image */}
-                <div className="absolute inset-0 w-full h-full">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300" />
-                </div>
-
-                {/* Content */}
-                <motion.div
-                  className='w-full h-full flex flex-col justify-end p-6'
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 1 }}
-                  transition={{ duration: 0.3, delay: index * 0.2 + 0.2 }}
-                >
-                  <div className="flex justify-between bg-white rounded-[40px] p-4 items-center">
-                    <div className="flex gap-4 items-center">
-                      <div
-                        className="w-[54px] h-[54px] relative rounded-full overflow-hidden flex justify-center items-center"
-                        style={{ backgroundColor: project.logoColor }}
-                      >
-                        <Image
-                          src={project.logoImage}
-                          alt={project.title}
-                          fill
-                          className="object-contain p-2"
-                        />
-                      </div>
-
-                      <div>
-                        <p className="font-semibold text-[18px] text-[#171717]">{project.title}</p>
-                        <p className="text-gray-700 text-[14px] leading-tight font-medium">{project.category}</p>
-                      </div>
-                    </div>
-
-                    <div className="w-[54px] h-[54px] bg-[#f6f6f6] rounded-full flex justify-center items-center">
-                      <ArrowRight className='w-[20px] h-[20px] text-black -rotate-45 group-hover:rotate-0 transition-transform duration-300 ease-in-out' />
-                    </div>
+                <Link href={`/projects/${project.key}`}>
+                  {/* Background Image */}
+                  <div className="absolute inset-0 w-full h-full">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300" />
                   </div>
-                </motion.div>
+
+                  {/* Content */}
+                  <motion.div
+                    className='w-full h-full flex flex-col justify-end p-6'
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 1 }}
+                    transition={{ duration: 0.3, delay: index * 0.2 + 0.2 }}
+                  >
+                    <div className="flex justify-between bg-white rounded-[40px] p-4 items-center">
+                      <div className="flex gap-4 items-center">
+                        <div
+                          className="w-[54px] h-[54px] relative rounded-full overflow-hidden flex justify-center items-center"
+                          style={{ backgroundColor: project.logoColor }}
+                        >
+                          <Image
+                            src={project.logoImage}
+                            alt={project.title}
+                            fill
+                            className="object-contain p-2"
+                          />
+                        </div>
+
+                        <div>
+                          <p className="font-semibold text-[18px] text-[#171717]">{project.title}</p>
+                          <p className="text-gray-700 text-[14px] leading-tight font-medium">{project.category}</p>
+                        </div>
+                      </div>
+
+                      <div className="w-[54px] h-[54px] bg-[#f6f6f6] rounded-full flex justify-center items-center">
+                        <ArrowRight className='w-[20px] h-[20px] text-black -rotate-45 group-hover:rotate-0 transition-transform duration-300 ease-in-out' />
+                      </div>
+                    </div>
+                  </motion.div>
+                </Link>
               </motion.div>
             ))}
           </div>

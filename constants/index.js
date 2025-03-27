@@ -18,13 +18,25 @@ export const portfolioProjects = [
           How do you keep users engaged with a product-based website?\n
           Implemented interactive before-and-after sliders, ingredient highlights, and user testimonials to enhance credibility and user engagement.`,
         desImages: [
-          "https://source.unsplash.com/random/800x600?beauty1",
-          "https://source.unsplash.com/random/800x600?beauty2",
-          "https://source.unsplash.com/random/800x600?beauty3",
-          "https://source.unsplash.com/random/800x600?beauty4",
-          "https://source.unsplash.com/random/800x600?beauty5",
-          "https://source.unsplash.com/random/800x600?beauty6"
-        ]
+          "/d1.avif",
+          "/d2.avif",
+          "/d3.avif",
+          "/d4.avif",
+          "/d5.avif",
+          "/d6.avif"
+        ],
+        year: "2025",
+        technologies: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+        features: [
+          "Modern, responsive design",
+          "Interactive before-and-after sliders",
+          "Ingredient highlights",
+          "User testimonials",
+          "E-commerce integration",
+          "Mobile-first approach"
+        ],
+        github: "https://github.com/yourusername/beautyrx",
+        liveUrl: "https://beautyrx.vercel.app/"
       },
     {
       key: "zenclean",
@@ -45,13 +57,25 @@ export const portfolioProjects = [
         What keeps users scrolling without frustration?\n
         Implemented smooth scroll animations and section transitions, creating a fluid, enjoyable user experience.`,
       desImages: [
-        "https://source.unsplash.com/random/800x600?cleaning1",
-        "https://source.unsplash.com/random/800x600?cleaning2",
-        "https://source.unsplash.com/random/800x600?cleaning3",
-        "https://source.unsplash.com/random/800x600?cleaning4",
-        "https://source.unsplash.com/random/800x600?cleaning5",
-        "https://source.unsplash.com/random/800x600?cleaning6"
-      ]
+        "/d1.avif",
+        "/d2.avif",
+        "/d3.avif",
+        "/d4.avif",
+        "/d5.avif",
+        "/d6.avif"
+      ],
+      year: "2023",
+      technologies: ["React", "Next.js", "Tailwind CSS", "GSAP"],
+      features: [
+        "Sticky action bar with context-aware CTAs",
+        "Smooth scroll animations",
+        "Section transitions",
+        "Booking system integration",
+        "Service pricing calculator",
+        "Customer reviews section"
+      ],
+      github: "https://github.com/yourusername/zenclean",
+      liveUrl: "https://zenclean.vercel.app/"
     },
     {
       key: "hospitalia",
@@ -72,15 +96,28 @@ export const portfolioProjects = [
         How can small tweaks make a big difference?\n
         Enhanced form usability with inline validation and progress indicators, reducing user errors during form submissions.`,
       desImages: [
-        "https://source.unsplash.com/random/800x600?healthcare1",
-        "https://source.unsplash.com/random/800x600?healthcare2",
-        "https://source.unsplash.com/random/800x600?healthcare3",
-        "https://source.unsplash.com/random/800x600?healthcare4",
-        "https://source.unsplash.com/random/800x600?healthcare5",
-        "https://source.unsplash.com/random/800x600?healthcare6"
-      ]
+        "/d1.avif",
+        "/d2.avif",
+        "/d3.avif",
+        "/d4.avif",
+        "/d5.avif",
+        "/d6.avif"
+      ],
+      year: "2023",
+      technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+      features: [
+        "Accessibility-first design",
+        "Keyboard navigation",
+        "Card-based layouts",
+        "Form validation",
+        "Progress indicators",
+        "Responsive design"
+      ],
+      github: "https://github.com/yourusername/hospitalia",
+      liveUrl: "https://hospitalia1.vercel.app/"
     },
     {
+        key: "genolab",
         title: "GenoLab",
         logoImage: "/genolab-logo.webp",
         logoColor: "#000000",
@@ -98,13 +135,25 @@ export const portfolioProjects = [
           How do you make users feel immersed in your content?\n
           Incorporated subtle parallax effects to enhance depth and engagement without overwhelming users.`,
         desImages: [
-          "https://source.unsplash.com/random/800x600?science1",
-          "https://source.unsplash.com/random/800x600?science2",
-          "https://source.unsplash.com/random/800x600?science3",
-          "https://source.unsplash.com/random/800x600?science4",
-          "https://source.unsplash.com/random/800x600?science5",
-          "https://source.unsplash.com/random/800x600?science6"
-        ]
+          "/d1.avif",
+          "/d2.avif",
+          "/d3.avif",
+          "/d4.avif",
+          "/d5.avif",
+          "/d6.avif"
+        ],
+        year: "2024",
+        technologies: ["React", "Next.js", "Tailwind CSS", "Three.js"],
+        features: [
+          "Interactive sidebar navigation",
+          "Parallax effects",
+          "Technical content visualization",
+          "Research showcase",
+          "Team profiles",
+          "Publication section"
+        ],
+        github: "https://github.com/yourusername/genolab",
+        liveUrl: "https://genolab.vercel.app/"
     },
     {
       key: "dreamit",
@@ -125,19 +174,31 @@ export const portfolioProjects = [
         How do you make search faster and smarter?\n
         Implemented an autocomplete search bar with relevant suggestions and filters, streamlining the user journey.`,
       desImages: [
-        "https://source.unsplash.com/random/800x600?webdesign1",
-        "https://source.unsplash.com/random/800x600?webdesign2",
-        "https://source.unsplash.com/random/800x600?webdesign3",
-        "https://source.unsplash.com/random/800x600?webdesign4",
-        "https://source.unsplash.com/random/800x600?webdesign5",
-        "https://source.unsplash.com/random/800x600?webdesign6"
-      ]
+        "/d1.avif",
+        "/d2.avif",
+        "/d3.avif",
+        "/d4.avif",
+        "/d5.avif",
+        "/d6.avif"
+      ],
+      year: "2024",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Redux"],
+      features: [
+        "Multi-level dropdown menu",
+        "Autocomplete search",
+        "Service filtering",
+        "Dynamic content loading",
+        "User dashboard",
+        "Booking system"
+      ],
+      github: "https://github.com/yourusername/dreamit",
+      liveUrl: "https://handymanweb2.vercel.app/"
     },
     {
       key: "marzive",
       title: "Marzive",
-      logoImage: "/marzive-logo.webp",
-      logoColor: "#8a6fff",
+      logoImage: "/marzive-logo.avif",
+      logoColor: "#ff00ff",
       image: "/marzive.avif",
       projectLink: "marzive",
       client: "Marzive",
@@ -152,12 +213,24 @@ export const portfolioProjects = [
         How can design improve decision-making?\n
         Used progressive disclosure to reveal advanced options only when needed, reducing cognitive load for beginners.`,
       desImages: [
-        "https://source.unsplash.com/random/800x600?blockchain1",
-        "https://source.unsplash.com/random/800x600?blockchain2",
-        "https://source.unsplash.com/random/800x600?blockchain3",
-        "https://source.unsplash.com/random/800x600?blockchain4",
-        "https://source.unsplash.com/random/800x600?blockchain5",
-        "https://source.unsplash.com/random/800x600?blockchain6"
-      ]
+        "/d1.avif",
+        "/d2.avif",
+        "/d3.avif",
+        "/d4.avif",
+        "/d5.avif",
+        "/d6.avif"
+      ],
+      year: "2024",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Web3.js"],
+      features: [
+        "Micro-interactions",
+        "Progressive disclosure",
+        "Wallet integration",
+        "Transaction history",
+        "Token management",
+        "User onboarding"
+      ],
+      github: "https://github.com/yourusername/marzive",
+      liveUrl: "https://marzive.io/"
     }
   ];

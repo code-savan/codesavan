@@ -10,7 +10,7 @@ export const portfolioProjects = [
         category: "Skincare & Wellness",
         type: "native",
         date: "Feb 20, 2025",
-        website: "https://beautyrx.vercel.app/",
+        website: "https://beauty-rx.vercel.app/",
         description: `BeautyRX's online presence lacked a cohesive brand experience. I revamped their website with a sleek, modern design that resonated with their target audience.
 
           How can UI design reflect luxury and trust?\n
@@ -37,7 +37,7 @@ export const portfolioProjects = [
         ],
         github: "https://github.com/yourusername/beautyrx",
         liveUrl: "https://beautyrx.vercel.app/"
-      },
+    },
     {
       key: "zenclean",
       title: "ZenClean",
@@ -205,7 +205,7 @@ export const portfolioProjects = [
       category: "Web3 Startup",
       type: "top",
       date: "Dec 31, 2024",
-      website: "https://marzive.io/",
+      website: "https://www.marzive.io/",
       description: `Marzive's interface was overly complex and alienated new users. I redesigned it with clean visuals, intuitive layouts, and onboarding flows that simplified interactions.
 
         What makes a UI feel instantly intuitive?\n

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from '@heroui/react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Coffee, Map, Star } from 'lucide-react';
-
+import Link from 'next/link';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex-col items-center justify-center overflow-hidden px-2 md:px-0" id='hero'>
@@ -129,6 +129,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.6 }}
                 >
+                    <Link href="#contact">
                     <motion.button
                         className="text-white rounded-[30px] pl-[30px] pr-[4px] h-[58px] bg-[#2424f9] hover:bg-[#3c3cfb] transition-colors duration-300 flex items-center justify-between group"
                         whileHover={{ scale: 1.02 }}
@@ -139,7 +140,8 @@ export default function Hero() {
                             <ArrowRight className='w-[20px] h-[20px] text-[#2a29ff] -rotate-45 group-hover:rotate-0 transition-transform duration-300 ease-in-out' />
                         </div>
                     </motion.button>
-
+                    </Link>
+                    <Link href="/projects">
                     <motion.button
                         className="text-gray-800 h-[58px] rounded-[30px] px-[20px] flex items-center justify-center bg-[#f6f6f6] font-semibold"
                         whileHover={{ scale: 1.02 }}
@@ -147,6 +149,7 @@ export default function Hero() {
                     >
                         My Work
                     </motion.button>
+                    </Link>
                 </motion.div>
             </div>
 

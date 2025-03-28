@@ -100,13 +100,17 @@ const Navigation = () => {
                     </Link>
                   </button>
 
+                  <Link href="#testimonials">
                   <button
                     onClick={() => scrollToSection('testimonials')}
                     className={`text-white/80 hover:text-white transition-colors text-[15px] ${activeSection === 'testimonials' ? 'text-white' : ''}`}
                   >
                     Testimonials
-                  </button>
 
+                  </button>
+                  </Link>
+
+                  <Link href="#contact">
                   <div className="bg-white transition-colors rounded-full px-5 py-2.5">
                     <button
                       onClick={() => scrollToSection('contact')}
@@ -115,7 +119,7 @@ const Navigation = () => {
                       Contact
                     </button>
                   </div>
-
+                  </Link>
             </nav>
               )}
           </motion.div>

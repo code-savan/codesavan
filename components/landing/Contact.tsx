@@ -57,13 +57,13 @@ const Contact = () => {
 
         {/* Social Links */}
         <div className='flex items-center justify-center gap-3'>
-          <Link href="https://twitter.com" target="_blank" className='w-[40px] h-[40px] rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors'>
+          <Link href="https://x.com/codesavan" target="_blank" className='w-[40px] h-[40px] rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors'>
             <Twitter className='w-5 h-5 text-gray-600' />
           </Link>
-          <Link href="https://instagram.com" target="_blank" className='w-[40px] h-[40px] rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors'>
+          <Link href="https://instagram.com/codesavan" target="_blank" className='w-[40px] h-[40px] rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors'>
             <Instagram className='w-5 h-5 text-gray-600' />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className='w-[40px] h-[40px] rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors'>
+          <Link href="https://linkedin.com/in/codesavan007" target="_blank" className='w-[40px] h-[40px] rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors'>
             <Linkedin className='w-5 h-5 text-gray-600' />
           </Link>
         </div>
@@ -74,7 +74,7 @@ const Contact = () => {
         <h1 className='text-[49px] font-medium mb-3'>Contact</h1>
         <p className='text-[17px] text-gray-600 mb-8'>
           Fill out the form, or reach out directly.<br />
-          I'll respond within 24 hours.
+          I&apos;ll respond within 24 hours.
         </p>
 
         <form onSubmit={handleSubmit} className='space-y-4'>
@@ -129,7 +129,7 @@ const Contact = () => {
 
         {/* Contact Info */}
         <div className='mt-12 text-center'>
-          <p className='text-[17px] text-gray-600 mb-4'>Let's chat!</p>
+          <p className='text-[17px] text-gray-600 mb-4'>Let&apos;s chat!</p>
           <p className='text-[20px] font-medium mb-2'>+ (234) 90 4614 3330</p>
           <p className='text-[20px] font-medium mb-12'>codesavan@proton.me</p>
           <p className='text-[15px] text-gray-500'>© Copyright 2024. All rights Reserved.</p>

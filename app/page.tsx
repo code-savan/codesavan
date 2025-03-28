@@ -22,7 +22,7 @@ export default function Home() {
         <div id="home">
           <Hero />
         </div>
-        <Tools />
+        {/* <Tools /> */}
         <div id="work">
           <Work />
         </div>

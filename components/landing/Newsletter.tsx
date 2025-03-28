@@ -63,7 +63,7 @@ const Newsletter = () => {
       </div>
 
       {/* Sliding Logos */}
-      <div className='w-full overflow-hidden relative'>
+      {/* <div className='w-full overflow-hidden relative'>
         <div className='absolute left-0 w-[150px] h-full bg-gradient-to-r from-white to-transparent z-10'></div>
         <div className='absolute right-0 w-[150px] h-full bg-gradient-to-l from-white to-transparent z-10'></div>
         <motion.div
@@ -90,7 +90,7 @@ const Newsletter = () => {
             </div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 };

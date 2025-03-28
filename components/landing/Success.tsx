@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import Link from 'next/link';
 const Success = () => {
   return (
     <div className='relative h-[450px] md:h-[600px] w-[98%] md:full mx-auto rounded-[35px]
@@ -31,6 +31,7 @@ const Success = () => {
           I&apos;ve worked with 20 clients to build <br className='hidden md:block' /> impactful websites that drive results
         </p>
 
+        <Link href="#contact">
         <motion.button
                         className="text-white rounded-[30px] pl-[30px] pr-[4px] h-[58px] bg-[#2424f9] hover:bg-[#3c3cfb] transition-colors duration-300 flex items-center justify-between group"
                         whileHover={{ scale: 1.02 }}
@@ -41,6 +42,7 @@ const Success = () => {
                             <ArrowRight className='w-[20px] h-[20px] text-[#2a29ff] -rotate-45 group-hover:rotate-0 transition-transform duration-300 ease-in-out' />
                         </div>
                     </motion.button>
+        </Link>
       </div>
     </div>
   );

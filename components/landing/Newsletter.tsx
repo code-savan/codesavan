@@ -3,20 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-
-const brandLogos = [
-  '/brands/logo1.svg',
-  '/brands/logo2.svg',
-  '/brands/logo3.svg',
-  '/brands/logo4.svg',
-  '/brands/logo5.svg',
-  // Duplicate for seamless loop
-  '/brands/logo1.svg',
-  '/brands/logo2.svg',
-  '/brands/logo3.svg',
-  '/brands/logo4.svg',
-  '/brands/logo5.svg',
-];
+import Link from 'next/link';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
@@ -62,35 +49,7 @@ const Newsletter = () => {
         </p>
       </div>
 
-      {/* Sliding Logos */}
-      {/* <div className='w-full overflow-hidden relative'>
-        <div className='absolute left-0 w-[150px] h-full bg-gradient-to-r from-white to-transparent z-10'></div>
-        <div className='absolute right-0 w-[150px] h-full bg-gradient-to-l from-white to-transparent z-10'></div>
-        <motion.div
-          className='flex gap-16 items-center'
-          animate={{
-            x: [0, -1920]
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-        >
-          {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
-            <div
-              key={index}
-              className='flex-shrink-0 w-[120px] h-[40px] relative grayscale opacity-50'
-            >
-              <img
-                src={logo}
-                alt={`Brand logo ${(index % brandLogos.length) + 1}`}
-                className='w-full h-full object-contain'
-              />
-            </div>
-          ))}
-        </motion.div>
-      </div> */}
+
     </div>
   );
 };

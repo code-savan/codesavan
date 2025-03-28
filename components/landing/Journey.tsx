@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const timelineYears = ['2024', '2023', '2022', '2021', '2020', '2019'];
 
@@ -124,9 +125,11 @@ const Journey = () => {
         ))}
       </div>
 
-      <motion.button
-        className="text-white rounded-[30px] pl-[30px] pr-[4px] h-[58px] bg-[#2424f9] hover:bg-[#3c3cfb] transition-colors duration-300 flex items-center justify-between group"
-        initial={{ opacity: 0, y: 20 }}
+      {/* Contact Button */}
+      <Link href="#contact">
+        <motion.button
+          className="text-white rounded-[30px] pl-[30px] pr-[4px] h-[58px] bg-[#2424f9] hover:bg-[#3c3cfb] transition-colors duration-300 flex items-center justify-between group"
+          initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
@@ -137,6 +140,7 @@ const Journey = () => {
             <ArrowRight className='w-[20px] h-[20px] text-[#2a29ff] -rotate-45 group-hover:rotate-0 transition-transform duration-300 ease-in-out' />
         </div>
       </motion.button>
+      </Link>
     </div>
   );
 };

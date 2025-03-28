@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Twitter, Instagram, Linkedin, CheckCircle, AlertCircle } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,24 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [toast, setToast] = useState<{
+    visible: boolean;
+    type: 'success' | 'error';
+    message: string;
+  }>({
+    visible: false,
+    type: 'success',
+    message: ''
+  });
+
+  const showToast = (type: 'success' | 'error', message: string) => {
+    setToast({ visible: true, type, message });
+
+    // Auto-hide toast after 5 seconds
+    setTimeout(() => {
+      setToast(prev => ({ ...prev, visible: false }));
+    }, 5000);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,19 +47,52 @@ const Contact = () => {
 
       if (response.ok) {
         setFormData({ name: '', email: '', message: '' });
-        alert('Message sent successfully!');
+        showToast('success', 'Thank you! I\'ve received your message and will reply right away.');
       } else {
-        alert('Failed to send message. Please try again.');
+        const errorData = await response.json();
+        showToast('error', errorData.error || 'Failed to send message. Please try again.');
       }
     } catch (error) {
-      alert('An error occurred. Please try again.');
+      showToast('error', 'An error occurred. Please try again.');
     }
 
     setIsSubmitting(false);
   };
 
   return (
-    <div className='flex flex-col items-center text-center px-4 md:px-0 py-[90px]' id='contact'>
+    <div className='flex flex-col items-center text-center px-4 md:px-0 py-[90px] relative' id='contact'>
+      {/* Toast Notification */}
+      <AnimatePresence>
+        {toast.visible && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className={`fixed top-6 right-6 z-50 max-w-md rounded-lg shadow-lg p-4 flex items-start gap-3
+              ${toast.type === 'success' ? 'bg-white border-l-4 border-green-500' : 'bg-white border-l-4 border-red-500'}`}
+          >
+            {toast.type === 'success' ? (
+              <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+            ) : (
+              <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+            )}
+            <div>
+              <h3 className={`font-medium text-sm ${toast.type === 'success' ? 'text-green-800' : 'text-red-800'}`}>
+                {toast.type === 'success' ? 'Message Sent!' : 'Error'}
+              </h3>
+              <p className="text-sm text-gray-600 mt-1">{toast.message}</p>
+            </div>
+            <button
+              onClick={() => setToast(prev => ({ ...prev, visible: false }))}
+              className="ml-auto text-gray-400 hover:text-gray-600"
+            >
+              &times;
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Profile Section */}
       <div className='mb-8'>
         <div className='w-[80px] h-[80px] rounded-full overflow-hidden mx-auto mb-4'>
@@ -121,9 +173,13 @@ const Contact = () => {
             type="submit"
             disabled={isSubmitting}
             className='w-full h-[70px] bg-[#2424f9] text-white rounded-full text-[17px]
-              hover:bg-[#2424f9]/90 transition-colors disabled:opacity-70'
+              hover:bg-[#2424f9]/90 transition-colors disabled:opacity-70 flex items-center justify-center'
           >
-            Send message
+            {isSubmitting ? (
+              <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            ) : (
+              'Send message'
+            )}
           </button>
         </form>
 

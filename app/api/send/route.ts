@@ -86,11 +86,17 @@ Message: ${message}
     });
 
     console.log('Email sent successfully:', data);
-    return NextResponse.json(data);
+    return NextResponse.json({
+      status: 'success',
+      message: 'Thank you! I\'ve received your message and will reply right away.'
+    });
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
-      { error: 'Failed to send email. Please try again later.' },
+      {
+        status: 'error',
+        error: 'Failed to send email. Please try again later.'
+      },
       { status: 500 }
     );
   }

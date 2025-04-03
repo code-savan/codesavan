@@ -36,7 +36,7 @@ export const portfolioProjects = [
           "Mobile-first approach"
         ],
         github: "https://github.com/yourusername/beautyrx",
-        liveUrl: "https://beautyrx.vercel.app/"
+        liveUrl: "https://beauty-rx.vercel.app/"
     },
     {
       key: "zenclean",

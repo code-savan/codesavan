@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { portfolioProjects } from '@/constants'
 import Image from 'next/image'
+import Link from 'next/link';
 
 const Work = () => {
   return (
@@ -27,8 +28,9 @@ const Work = () => {
 
         <section className='flex flex-col gap-4 w-full relative min-h-[1200px]'>
             {portfolioProjects.slice(0, 4).map((project, index) => (
+                <Link href={project.website} key={project.key}>
                 <motion.div
-                    key={project.key}
+
                     className={`rounded-[40px] md:h-[400px] h-[350px] w-full overflow-hidden cursor-pointer group
                               sticky top-[80px] `}
                     style={{
@@ -83,6 +85,7 @@ const Work = () => {
                         </div>
                     </motion.div>
                 </motion.div>
+                </Link>
             ))}
         </section>
     </div>

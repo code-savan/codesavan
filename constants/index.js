@@ -35,7 +35,7 @@ export const portfolioProjects = [
           "E-commerce integration",
           "Mobile-first approach"
         ],
-        github: "https://github.com/yourusername/beautyrx",
+        github: "https://github.com/code-savan/beautyrx",
         liveUrl: "https://beauty-rx.vercel.app/"
     },
     {
@@ -74,7 +74,7 @@ export const portfolioProjects = [
         "Service pricing calculator",
         "Customer reviews section"
       ],
-      github: "https://github.com/yourusername/zenclean",
+      github: "https://github.com/code-savan/zenclean",
       liveUrl: "https://zenclean.vercel.app/"
     },
     {
@@ -113,7 +113,7 @@ export const portfolioProjects = [
         "Progress indicators",
         "Responsive design"
       ],
-      github: "https://github.com/yourusername/hospitalia",
+      github: "https://github.com/code-savan/hospitalia",
       liveUrl: "https://hospitalia1.vercel.app/"
     },
     {
@@ -152,7 +152,7 @@ export const portfolioProjects = [
           "Team profiles",
           "Publication section"
         ],
-        github: "https://github.com/yourusername/genolab",
+        github: "https://github.com/code-savan/genolab",
         liveUrl: "https://genolab.vercel.app/"
     },
     {
@@ -191,7 +191,7 @@ export const portfolioProjects = [
         "User dashboard",
         "Booking system"
       ],
-      github: "https://github.com/yourusername/dreamit",
+      github: "https://github.com/code-savan/handymanweb",
       liveUrl: "https://handymanweb2.vercel.app/"
     },
     {
@@ -230,7 +230,7 @@ export const portfolioProjects = [
         "Token management",
         "User onboarding"
       ],
-      github: "https://github.com/yourusername/marzive",
+      github: "https://github.com/code-savan/marzive.io",
       liveUrl: "https://marzive.io/"
     }
   ];

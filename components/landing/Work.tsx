@@ -28,7 +28,7 @@ const Work = () => {
 
         <section className='flex flex-col gap-4 w-full relative min-h-[1200px]'>
             {portfolioProjects.slice(0, 4).map((project, index) => (
-                <Link href={project.website} key={project.key}>
+                <Link href={`/projects/${project.key}`} key={project.key}>
                 <motion.div
 
                     className={`rounded-[40px] md:h-[400px] h-[350px] w-full overflow-hidden cursor-pointer group

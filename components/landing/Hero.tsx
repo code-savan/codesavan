@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { Button } from '@heroui/react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Coffee, Map, Star } from 'lucide-react';
 import Link from 'next/link';

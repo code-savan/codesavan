@@ -81,7 +81,7 @@ const Testimonials = () => {
           {[1, 2, 3, 4].map((num) => (
             <Image
               key={num}
-              src={`/avatars/avatar${num}.jpg`}
+              src={`/avatars/avatar${num}.avif`}
               alt="Client Avatar"
               width={36}
               height={36}

@@ -1,0 +1,22 @@
+# Code Savan
+
+> Freelance web designer and full-stack developer based in Abuja, Nigeria, available worldwide.
+
+## Pages
+
+- [Home](https://www.codesavan.com): Services, experience, client testimonials, FAQs, and contact form.
+- [Projects](https://www.codesavan.com/projects): Portfolio of web design and development work.
+- [BeautyRX project](https://www.codesavan.com/projects/beautyrx): Skincare and wellness website.
+- [ZenClean project](https://www.codesavan.com/projects/zenclean): House cleaning agency website.
+- [Hospitalia project](https://www.codesavan.com/projects/hospitalia): Healthcare agency website.
+- [GenoLab project](https://www.codesavan.com/projects/genolab): Research agency website.
+- [Dream IT project](https://www.codesavan.com/projects/dreamit): Multi-purpose theme website.
+- [Marzive project](https://www.codesavan.com/projects/marzive): Web3 startup website.
+
+## Reference files
+
+- [Services](https://www.codesavan.com/llm-content/services.md)
+- [About](https://www.codesavan.com/llm-content/about.md)
+- [Projects](https://www.codesavan.com/llm-content/projects.md)
+- [FAQ](https://www.codesavan.com/llm-content/faq.md)
+- [Full index](https://www.codesavan.com/llms-full.txt)

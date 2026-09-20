@@ -10,19 +10,19 @@ import Link from 'next/link';
 
 const heroImages = [
   {
-    src: "/ph.png",
+    src: "/ph.avif",
     alt: "Project Hero 1"
   },
   {
-    src: "/ph2.png",
+    src: "/ph2.avif",
     alt: "Project Hero 2"
   },
   {
-    src: "/ph3.png",
+    src: "/ph3.avif",
     alt: "Project Hero 3"
   },
   {
-    src: "/ph4.png",
+    src: "/ph4.avif",
     alt: "Project Hero 4"
   }
 ];

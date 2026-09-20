@@ -1,0 +1,58 @@
+# Code Savan — full reference
+
+> Code Savan (@Codesavan) is a freelance web designer and full-stack developer
+> based in Abuja, Nigeria, available worldwide.
+
+## Contact
+
+- Phone: +(234) 90 4614 3330
+- Email: codesavan@proton.me (contact form replies within 24 hours)
+- X: https://x.com/codesavan
+- Instagram: https://instagram.com/codesavan
+- LinkedIn: https://linkedin.com/in/codesavan007
+
+## Track record
+
+- 6+ years of experience in design and development.
+- 95% client satisfaction rate.
+- 20 clients served; 20+ customers.
+
+## Career history
+
+- Web/IT Executive at BritishAUC, 2024 to present.
+- No-Code Developer at ICIR, 2021 to 2023.
+- Full-Stack Developer at KSolutions, 2014 to 2021.
+
+## Services
+
+- Web Design: visually appealing, user-friendly designs that reflect the client's brand, from wireframes to final prototypes.
+- Web Development: functional no-code and full-stack websites that are easy to manage and optimized for performance across devices.
+- Brand Identity: cohesive visual branding including logos, color palettes, and typography.
+- UX/UI Design: intuitive interfaces and seamless experiences to improve engagement and usability.
+- Consultation Services: expert advice and actionable insights for planning and executing design projects.
+
+## Project timelines
+
+- A typical website takes 2-4 weeks; larger projects may take 6-8 weeks.
+- A detailed timeline is provided during the initial consultation.
+- Revision rounds are included in every project until the client is satisfied.
+
+## Tools
+
+- Figma, Adobe Creative Suite, React, Next.js, Tailwind CSS (plus GSAP, TypeScript, Three.js, Redux, and Web3.js on individual projects).
+
+## Portfolio (6 projects)
+
+- BeautyRX (2025): skincare and wellness client site. https://www.codesavan.com/projects/beautyrx
+- ZenClean (2023): house cleaning agency site. https://www.codesavan.com/projects/zenclean
+- Hospitalia (2023): healthcare agency site. https://www.codesavan.com/projects/hospitalia
+- GenoLab (2024): research agency site. https://www.codesavan.com/projects/genolab
+- Dream IT (2024): multi-purpose theme site. https://www.codesavan.com/projects/dreamit
+- Marzive (2024): Web3 startup site. https://www.codesavan.com/projects/marzive
+
+## Detailed references
+
+- https://www.codesavan.com/llm-content/services.md
+- https://www.codesavan.com/llm-content/about.md
+- https://www.codesavan.com/llm-content/projects.md
+- https://www.codesavan.com/llm-content/faq.md

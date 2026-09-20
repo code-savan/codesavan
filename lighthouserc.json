@@ -1,0 +1,31 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/projects",
+        "http://localhost:3000/projects/marzive"
+      ],
+      "startServerCommand": "npm run start",
+      "numberOfRuns": 3,
+      "settings": {
+        "onlyCategories": ["performance"]
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["warn", { "minScore": 0.8 }],
+        "largest-contentful-paint": ["error", { "maxNumericValue": 4500 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.05 }],
+        "total-blocking-time": ["warn", { "maxNumericValue": 600 }],
+        "resource-summary:script:size": ["error", { "maxNumericValue": 210000 }],
+        "resource-summary:image:size": ["error", { "maxNumericValue": 820000 }],
+        "resource-summary:font:size": ["error", { "maxNumericValue": 40000 }],
+        "resource-summary:third-party:count": ["error", { "maxNumericValue": 0 }]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
